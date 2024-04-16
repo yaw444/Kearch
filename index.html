@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kearch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Kearch</h1>
+        <div class="tabs">
+            <button class="tablink active" onclick="openTab('text')">Text</button>
+            <button class="tablink" onclick="openTab('image')">Image</button>
+        </div>
+        <div id="text" class="tabcontent">
+            <div class="search-container">
+                <input type="text" id="searchInput" class="search-input" placeholder="Search text">
+                <button id="textSearchBtn" class="search-btn">Search</button>
+            </div>
+            <div id="textResults" class="results"></div>
+        </div>
+        <div id="image" class="tabcontent">
+            <div class="search-container">
+                <input type="text" id="imageSearchInput" class="search-input" placeholder="Search images">
+                <button id="imageSearchBtn" class="search-btn">Search</button>
+            </div>
+            <div id="imageResults" class="results"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
